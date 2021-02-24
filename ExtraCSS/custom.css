@@ -1,0 +1,186 @@
+body {
+    background-image: url(https://media.giphy.com/media/9J1jNLrG2CFQI1Uhc3/giphy.gif);
+    background-size: cover;
+    
+}
+
+.boxmontre {
+    background-image:url(images/fond-gris-peint_53876-94041.jpg);
+    opacity: 0.88;
+    margin-top: 7%;
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 5%;
+    transition-duration: 400ms;
+    position: relative;
+    overflow: hidden;
+}
+
+.boxmontre:hover{
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+
+/* PREMIERE COLONE */
+
+/* TITRE */
+.col-sm-4 h1 {
+    font-family:'PT Sans Narrow', sans-serif;
+    text-align: left;
+    margin-left: 15%;
+     margin-top: 20%;
+    font-size: 5vw;
+    color: rgb(32, 32, 32);
+}
+
+/* PRIX */
+
+.Prix {
+    color: rgb(32, 32, 32);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    margin-left: 15%;
+    margin-top: 5%;
+    font-size: 3vw;
+   
+}
+
+/* NOTE ETOILE */
+
+.rating {
+    text-align: left;
+    margin-left: 15%;
+ }
+
+.rating a {
+    
+    color: rgb(236, 236, 236);
+    text-decoration: none;
+    font-size: 2vw;
+    transition: color .4s;
+ }
+
+.rating a:hover,
+.rating a:focus,
+.rating a:hover ~ a,
+.rating a:focus ~ a {
+    color: rgb(248, 175, 39);
+    cursor: pointer;
+}
+ /* Fin NOTE ETOILE */
+/* FIN PREMIERE COLONE */
+
+
+/* DEUXIEME COLONNE /*
+
+
+/* 3EME COLONE */
+
+.texte{
+    margin-top: 5%;
+    text-align: center;
+    
+}
+.text-content{
+    opacity: 0;
+    position: relative;
+    left: 110%;
+
+    }
+.boxmontre:hover .text-content{
+    animation-name: colone3 ; 
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes colone3 {
+    from {
+            opacity: 0;
+            left: 110%;
+        }
+        to {
+             opacity: 1;
+             left: 0;
+        }
+    }
+
+.texte p {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 120%;
+}
+.texte h2 {
+    color: rgb(49, 49, 49);
+}
+
+/* BOUTON QUANTITY */
+
+.quantity {
+    display: inline-block; }
+   
+.quantity .input-text.qty {
+    width: 35px;
+    height: 41px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #000000;
+   }
+   
+.quantity.buttons_added {
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top; }
+   
+.quantity.buttons_added input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: none;
+   }
+   
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
+    padding: 7px 10px 8px;
+    height: 41px;
+    background-color: #3b3b3b;
+    border: 1px solid #000000;
+    cursor:pointer;}
+   
+.quantity.buttons_added .minus {
+    border-right: 0; }
+   
+.quantity.buttons_added .plus {
+    border-left: 0; }
+   
+.quantity.buttons_added .minus:hover,
+.quantity.buttons_added .plus:hover {
+    background: #eeeeee; }
+   
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0; }
+    
+.quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+    outline: none; }
+
+ /* FIN BOUTON QUANTITY */
+
+/* BOUTON ADD TO CARD */
+
+.card {
+    margin-top: 10%;
+    margin-left: 30%;
+    width: 150px;
+}
+.texte p{ 
+    padding: 5%;
+}
+
+/* FIN 3EME COLONE */
